@@ -10,12 +10,14 @@
 
 @interface LogInViewController : UIViewController
 
-@property(nonatomic, weak) IBOutlet UITextField *usernameField;
-@property(nonatomic, weak) IBOutlet UITextField *passwordField;
 @property(nonatomic, weak) IBOutlet UIButton *loginButton;
 
 //The user details to log in
 @property(nonatomic, weak) NSString *username;
 @property(nonatomic, weak) NSString *password;
+
+//Log In Functions
+- (IBAction)logInPressed: (id) logInButton;
+- (IBAction)checkLoginValid:(id)sender;
 
 @end

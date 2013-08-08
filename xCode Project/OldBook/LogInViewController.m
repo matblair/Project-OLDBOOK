@@ -5,13 +5,16 @@
 //  Created by Mat on 7/08/2013.
 //  Copyright (c) 2013 Mat. All rights reserved.
 //
-
+#import <Parse/Parse.h>
 #import "LogInViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #define LOGINKEY "LOGIN"
 
 
 @interface LogInViewController () <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
 @end
 
@@ -29,7 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    [self.loginButton setEnabled:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,14 +43,45 @@
 
 #pragma mark - UITextFieldDelegate methods
 - (BOOL) textFieldShouldReturn:(UITextField *)textField {
-    if([textField.restorationIdentifier isEqual:@"LOGIN"]){
-        self.username = textField.text;
-    }else {
-        self.password = textField.text;
+    if(textField==self.usernameField){
+        [self.passwordField becomeFirstResponder];
+    } else {
+        [textField resignFirstResponder];
+        [self logInPressed:textField];
     }
-    [textField resignFirstResponder];
-
     return YES;
+}
+
+
+- (IBAction)logInPressed: (id) sender{
+    self.password = [self passwordField].text;
+    self.username = [self usernameField].text;
+    
+    if([self.username length]!=0 && [self.password length]!=0){
+       PFUser *newUser = [PFUser logInWithUsername:self.username password:self.password];
+       if(newUser){
+           NSLog(@"Successfully logged in");
+       }
+    }
+    
+    if ([self.username length]==0){
+        [self.usernameField setPlaceholder:@"Enter username and try again"];
+    }
+    
+    if ([self.password length]==0){
+        [self.passwordField setPlaceholder:@"Enter password and try again"];
+    }
+    
+    NSLog(@"I AM finished  WOOOHOOO");
+
+    return;
+}
+- (IBAction) forgotPassword: (id) forgotPasswordButton{
+
+}
+
+- (IBAction)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+   
 }
 
 #pragma mark - UIResponderMethods

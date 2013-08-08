@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Mat. All rights reserved.
 //
 
+#import <Parse/Parse.h>
 #import "AppDelegate.h"
 
 @implementation AppDelegate
@@ -16,6 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //Set up parse connection
+    [Parse setApplicationId:@"mzhUVsf2I5Dxb9T4ptFtpIFWOXS20f5qWxJJPOnR"
+                  clientKey:@"vec4TZnMwQyuZzpof6cd08Sv63tzL2SQlTOKfxpc"];
     return YES;
 }
 

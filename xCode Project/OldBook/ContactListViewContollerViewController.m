@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    Contact *newContact = [[Contact alloc] initWithImage:[UIImage imageNamed:@"defaultimage"]];
+    Contact *newContact = [[Contact alloc] initWithImage:[UIImage imageNamed:@"defaultimage.png"]];
     [self.friendList arrayByAddingObject:newContact];
     [self.groups arrayByAddingObject:self.friendList];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"ContactCell"];
@@ -51,17 +51,20 @@
 
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
     //return [self.friendList count];
-    return 100;
+    return 45;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView: (UICollectionView *)collectionView {
     //return [self.groups count];
-    return 20;
+    return 1;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"ContactCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor blueColor];
+    UIImageView *cellImageView = [[UIImageView alloc] init];
+    UIImage *cellImage = [UIImage imageNamed:@"defaultimage.png"];
+    cellImageView.image = cellImage;
+    [cell setBackgroundView:cellImageView];
     return cell;
 }
 
@@ -80,9 +83,11 @@
 
 // 1
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    Contact *cellContact = [self.friendList objectAtIndex:indexPath.row];
+    Contact *cellContact = [self.friendList objectAtIndex:0];
     UIImage *cellImage = cellContact.contactImage;
-    CGSize retval = cellImage.size.width > 0 ? cellImage.size : CGSizeMake(50, 50);
+    //UIImage *cellImage = [UIImage imageNamed:@"defaultimage.png"];
+    //NSLog(@"%lf", cellImage.size.width);
+    CGSize retval = cellImage.size.width > 0 ? cellImage.size : CGSizeMake(75, 75);
     return retval;
 }
 

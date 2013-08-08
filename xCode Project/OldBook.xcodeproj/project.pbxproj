@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401905FB17B320E300A2C741 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401905FA17B320E300A2C741 /* Parse.framework */; };
+		401905FD17B3250700A2C741 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401905FC17B3250700A2C741 /* AudioToolbox.framework */; };
 		4022A4EB17B2634E0097DFA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4022A4EA17B2634E0097DFA9 /* Foundation.framework */; };
 		4022A4ED17B2634E0097DFA9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4022A4EC17B2634E0097DFA9 /* CoreGraphics.framework */; };
 		4022A4EF17B2634E0097DFA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4022A4EE17B2634E0097DFA9 /* UIKit.framework */; };
@@ -36,13 +38,24 @@
 		4022A55017B266790097DFA9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4022A54F17B266790097DFA9 /* User.m */; };
 		4022A55E17B2723A0097DFA9 /* loginkey@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 4022A55D17B2723A0097DFA9 /* loginkey@2X.png */; };
 		4022A56117B273E50097DFA9 /* LogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4022A56017B273E50097DFA9 /* LogInViewController.m */; };
-		4022A56317B281A50097DFA9 /* defaultimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4022A56217B281A50097DFA9 /* defaultimage.png */; };
 		4022A56617B282EB0097DFA9 /* ContactDetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4022A56517B282EB0097DFA9 /* ContactDetailViewViewController.m */; };
 		4022A56917B283140097DFA9 /* CreateEmergencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4022A56817B283140097DFA9 /* CreateEmergencyViewController.m */; };
 		4022A56B17B2849B0097DFA9 /* loginLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4022A56A17B2849B0097DFA9 /* loginLogo.png */; };
 		4022A56E17B288BB0097DFA9 /* ContactSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4022A56D17B288BB0097DFA9 /* ContactSearchController.m */; };
 		40609F5917B28D3F00546FFF /* EmergencyStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 40609F5817B28D3F00546FFF /* EmergencyStatus.m */; };
 		40609F5B17B28F4000546FFF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40609F5A17B28F4000546FFF /* MapKit.framework */; };
+		40F3F75817B3269900B70577 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F3F75717B3269900B70577 /* CoreLocation.framework */; };
+		40F3F75A17B326AC00B70577 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F3F75917B326AC00B70577 /* libz.1.1.3.dylib */; };
+		40F3F75C17B326B700B70577 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F3F75B17B326B700B70577 /* CFNetwork.framework */; };
+		40F3F75E17B326C000B70577 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F3F75D17B326C000B70577 /* MobileCoreServices.framework */; };
+		40F3F76017B326CC00B70577 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F3F75F17B326CC00B70577 /* QuartzCore.framework */; };
+		40F3F76217B326D100B70577 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F3F76117B326D100B70577 /* Security.framework */; };
+		40F3F76417B326DB00B70577 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F3F76317B326DB00B70577 /* StoreKit.framework */; };
+		40F3F76617B326E900B70577 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40F3F76517B326E900B70577 /* SystemConfiguration.framework */; };
+		40F3F76917B327AA00B70577 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F3F76817B327AA00B70577 /* SignUpViewController.m */; };
+		40F3F76C17B327FA00B70577 /* ForgottenPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F3F76B17B327FA00B70577 /* ForgottenPasswordViewController.m */; };
+		40F3F77217B3286F00B70577 /* AMBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F3F76F17B3286F00B70577 /* AMBlurView.m */; };
+		40F3F77517B3325000B70577 /* defaultimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F3F77417B3325000B70577 /* defaultimage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		401905FA17B320E300A2C741 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		401905FC17B3250700A2C741 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4022A4E717B2634E0097DFA9 /* OldBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4022A4EA17B2634E0097DFA9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4022A4EC17B2634E0097DFA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,7 +115,6 @@
 		4022A55D17B2723A0097DFA9 /* loginkey@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginkey@2X.png"; sourceTree = "<group>"; };
 		4022A55F17B273E50097DFA9 /* LogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInViewController.h; sourceTree = "<group>"; };
 		4022A56017B273E50097DFA9 /* LogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInViewController.m; sourceTree = "<group>"; };
-		4022A56217B281A50097DFA9 /* defaultimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultimage.png; sourceTree = "<group>"; };
 		4022A56417B282EB0097DFA9 /* ContactDetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactDetailViewViewController.h; sourceTree = "<group>"; };
 		4022A56517B282EB0097DFA9 /* ContactDetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactDetailViewViewController.m; sourceTree = "<group>"; };
 		4022A56717B283140097DFA9 /* CreateEmergencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateEmergencyViewController.h; sourceTree = "<group>"; };
@@ -111,6 +125,21 @@
 		40609F5717B28D3F00546FFF /* EmergencyStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmergencyStatus.h; sourceTree = "<group>"; };
 		40609F5817B28D3F00546FFF /* EmergencyStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmergencyStatus.m; sourceTree = "<group>"; };
 		40609F5A17B28F4000546FFF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		40F3F75717B3269900B70577 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		40F3F75917B326AC00B70577 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		40F3F75B17B326B700B70577 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		40F3F75D17B326C000B70577 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		40F3F75F17B326CC00B70577 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		40F3F76117B326D100B70577 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		40F3F76317B326DB00B70577 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		40F3F76517B326E900B70577 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		40F3F76717B327AA00B70577 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		40F3F76817B327AA00B70577 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		40F3F76A17B327FA00B70577 /* ForgottenPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgottenPasswordViewController.h; sourceTree = "<group>"; };
+		40F3F76B17B327FA00B70577 /* ForgottenPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgottenPasswordViewController.m; sourceTree = "<group>"; };
+		40F3F76E17B3286F00B70577 /* AMBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMBlurView.h; sourceTree = "<group>"; };
+		40F3F76F17B3286F00B70577 /* AMBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMBlurView.m; sourceTree = "<group>"; };
+		40F3F77417B3325000B70577 /* defaultimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultimage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +147,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F3F76617B326E900B70577 /* SystemConfiguration.framework in Frameworks */,
+				40F3F76417B326DB00B70577 /* StoreKit.framework in Frameworks */,
+				40F3F76217B326D100B70577 /* Security.framework in Frameworks */,
+				40F3F76017B326CC00B70577 /* QuartzCore.framework in Frameworks */,
+				40F3F75E17B326C000B70577 /* MobileCoreServices.framework in Frameworks */,
+				40F3F75C17B326B700B70577 /* CFNetwork.framework in Frameworks */,
+				40F3F75A17B326AC00B70577 /* libz.1.1.3.dylib in Frameworks */,
+				40F3F75817B3269900B70577 /* CoreLocation.framework in Frameworks */,
 				4022A4ED17B2634E0097DFA9 /* CoreGraphics.framework in Frameworks */,
+				401905FD17B3250700A2C741 /* AudioToolbox.framework in Frameworks */,
 				4022A4F117B2634E0097DFA9 /* CoreData.framework in Frameworks */,
 				40609F5B17B28F4000546FFF /* MapKit.framework in Frameworks */,
 				4022A4EF17B2634E0097DFA9 /* UIKit.framework in Frameworks */,
+				401905FB17B320E300A2C741 /* Parse.framework in Frameworks */,
 				4022A4EB17B2634E0097DFA9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +201,16 @@
 		4022A4E917B2634E0097DFA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				40F3F76517B326E900B70577 /* SystemConfiguration.framework */,
+				40F3F76317B326DB00B70577 /* StoreKit.framework */,
+				40F3F76117B326D100B70577 /* Security.framework */,
+				40F3F75F17B326CC00B70577 /* QuartzCore.framework */,
+				40F3F75D17B326C000B70577 /* MobileCoreServices.framework */,
+				40F3F75B17B326B700B70577 /* CFNetwork.framework */,
+				40F3F75917B326AC00B70577 /* libz.1.1.3.dylib */,
+				40F3F75717B3269900B70577 /* CoreLocation.framework */,
+				401905FC17B3250700A2C741 /* AudioToolbox.framework */,
+				401905FA17B320E300A2C741 /* Parse.framework */,
 				40609F5A17B28F4000546FFF /* MapKit.framework */,
 				4022A4EA17B2634E0097DFA9 /* Foundation.framework */,
 				4022A4EC17B2634E0097DFA9 /* CoreGraphics.framework */,
@@ -260,6 +309,8 @@
 		4022A52517B263F20097DFA9 /* General Views */ = {
 			isa = PBXGroup;
 			children = (
+				40F3F76E17B3286F00B70577 /* AMBlurView.h */,
+				40F3F76F17B3286F00B70577 /* AMBlurView.m */,
 				4022A52617B2642D0097DFA9 /* UserCollectionViewCell.h */,
 				4022A52717B2642D0097DFA9 /* UserCollectionViewCell.m */,
 				4022A52917B264430097DFA9 /* UserCollectioinView.h */,
@@ -270,6 +321,10 @@
 				4022A56517B282EB0097DFA9 /* ContactDetailViewViewController.m */,
 				4022A56C17B288BB0097DFA9 /* ContactSearchController.h */,
 				4022A56D17B288BB0097DFA9 /* ContactSearchController.m */,
+				40F3F76717B327AA00B70577 /* SignUpViewController.h */,
+				40F3F76817B327AA00B70577 /* SignUpViewController.m */,
+				40F3F76A17B327FA00B70577 /* ForgottenPasswordViewController.h */,
+				40F3F76B17B327FA00B70577 /* ForgottenPasswordViewController.m */,
 			);
 			name = "General Views";
 			sourceTree = "<group>";
@@ -322,8 +377,8 @@
 		4022A55317B267C20097DFA9 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				40F3F77417B3325000B70577 /* defaultimage.png */,
 				4022A56A17B2849B0097DFA9 /* loginLogo.png */,
-				4022A56217B281A50097DFA9 /* defaultimage.png */,
 				4022A55D17B2723A0097DFA9 /* loginkey@2X.png */,
 			);
 			name = Image;
@@ -416,10 +471,10 @@
 			files = (
 				4022A55E17B2723A0097DFA9 /* loginkey@2X.png in Resources */,
 				4022A4F717B2634E0097DFA9 /* InfoPlist.strings in Resources */,
-				4022A56317B281A50097DFA9 /* defaultimage.png in Resources */,
 				4022A50217B2634E0097DFA9 /* Images.xcassets in Resources */,
 				4022A56B17B2849B0097DFA9 /* loginLogo.png in Resources */,
 				4022A52017B263630097DFA9 /* Storyboard.storyboard in Resources */,
+				40F3F77517B3325000B70577 /* defaultimage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +499,8 @@
 				4022A56117B273E50097DFA9 /* LogInViewController.m in Sources */,
 				4022A50017B2634E0097DFA9 /* OldBook.xcdatamodeld in Sources */,
 				4022A54B17B266330097DFA9 /* Contact.m in Sources */,
+				40F3F76C17B327FA00B70577 /* ForgottenPasswordViewController.m in Sources */,
+				40F3F76917B327AA00B70577 /* SignUpViewController.m in Sources */,
 				4022A52E17B2645B0097DFA9 /* ContactListViewContollerViewController.m in Sources */,
 				4022A4F917B2634E0097DFA9 /* main.m in Sources */,
 				4022A53417B265CA0097DFA9 /* AssistedPersons.m in Sources */,
@@ -451,6 +508,7 @@
 				4022A55017B266790097DFA9 /* User.m in Sources */,
 				4022A56E17B288BB0097DFA9 /* ContactSearchController.m in Sources */,
 				4022A53C17B265F80097DFA9 /* Message.m in Sources */,
+				40F3F77217B3286F00B70577 /* AMBlurView.m in Sources */,
 				4022A53F17B266020097DFA9 /* PictureMessage.m in Sources */,
 				4022A56917B283140097DFA9 /* CreateEmergencyViewController.m in Sources */,
 				4022A52B17B264430097DFA9 /* UserCollectioinView.m in Sources */,
@@ -571,6 +629,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mat/Dropbox/University/SWEN30007/OldBook,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OldBook/OldBook-Prefix.pch";
 				INFOPLIST_FILE = "OldBook/OldBook-Info.plist";
@@ -584,6 +646,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/mat/Dropbox/University/SWEN30007/OldBook,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OldBook/OldBook-Prefix.pch";
 				INFOPLIST_FILE = "OldBook/OldBook-Info.plist";

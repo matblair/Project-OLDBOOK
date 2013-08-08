@@ -19,6 +19,7 @@
 //Last Seen Date
 @property (weak,nonatomic)NSDate *lastSeen;
 
+
 //Initialisers and convienience constructors
 - (id) init;
 - (id) initWithImage: (UIImage *)image;
